@@ -7,12 +7,12 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { DLT } from "./redux/actions/action";
+import { DLT } from "./redux/actions/action11";
 function Header(props) {
     const getdata = useSelector((state) => state.cartreducer.carts);
     // console.log(getdata);
     const dispatch = useDispatch();
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState(2);
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
